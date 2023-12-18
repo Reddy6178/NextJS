@@ -1,9 +1,17 @@
-export const metadata= {
-    title :"About me"
+import { Metadata } from "next";
+import Link from "next/link";
+
+export const metadata : Metadata= {
+    title :{
+        absolute : "About me"
+    }
 }
 
 export default function About() {
     return(
-        <h1>About Me</h1>
+        <>
+            <Link href="/"> Home</Link>
+            <h1>About Me</h1>
+        </>
     )
 }
