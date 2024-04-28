@@ -13,7 +13,7 @@ export default function ReviewId({
         reviewId : string
     }
 }){
-    const random= getRandomInteger(2);
+    const random= getRandomInteger(1000);
     if(random ===1){
         throw new Error("Error Loading Review");
     }

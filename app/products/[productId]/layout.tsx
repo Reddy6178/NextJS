@@ -4,7 +4,7 @@ function getRandomInteger( count : number){
 
 export default function ProductDetailsLayout({children,} : {children : React.ReactNode}){
 
-    const random= getRandomInteger(2);
+    const random= getRandomInteger(1000);
     if(random ===1){
         throw new Error("Error Loading Product");
     }
